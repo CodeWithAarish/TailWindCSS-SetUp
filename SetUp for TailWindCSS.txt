@@ -1,0 +1,12 @@
+1. Add Play CDN to your HTML file before head
+2. Now open terminal in VS Code and write the following commands:-
+npm init -y
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init-p
+3. Create an “Input.css” file:- After creating the file, add it to your HTML and edit it with the below piece of content:-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+4.In the tailwind.config.js file, You have to replace “content: []” with “content: [“*”]”.
+5.Moreover, You have to add “start”: “vite” to your scripts in package.json.
+6.Finally, you have to run the “npm run start” command to start a dev server.
